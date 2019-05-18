@@ -1,0 +1,66 @@
+>>> Students= int(input("How many students are you grading?..."))
+How many students are you grading?...7
+>>> Grades=[]
+>>> count= 0
+>>> def finalgrade(hw,test,quiz, name):
+	Grade= .4*test+.4*hw+.2*quiz
+	Grades.append(Grade)
+	print("Grade of", name, "is", Grade)
+
+	
+>>> import numpy as num
+>>> while True:
+	count += 1
+	hw=int(input("hw: "))
+	quiz=int(input("quiz: "))
+	test= int(input("test: "))
+	name= input("name: ")
+	finalgrade(hw,quiz,test,name)
+	if count== Students:
+		mean= num.mean(Grades)
+		variance= num.var(Grades)
+		std= num.std(Grades)
+		print("mean is:",mean)
+		print("variance is:", variance)
+		print("Standard Deviation is: ", std)
+		break
+
+	
+hw: 70
+quiz: 90
+test: 80
+name: Jake
+Grade of Jake is 80.0
+hw: 90
+quiz: 100
+test: 80
+name: Martha
+Grade of Martha is 92.0
+hw: 90
+quiz: 60
+test: 97
+name: Kat
+Grade of Kat is 79.4
+hw: 70
+quiz: 80
+test: 90
+name: Victoria
+Grade of Victoria is 78.0
+hw: 50
+quiz: 90
+test: 70
+name: Popi
+Grade of Popi is 70.0
+hw: 70
+quiz: 80
+test: 100
+name: uip
+Grade of uip is 80.0
+hw: 100
+quiz: 100
+test: 90
+name: adonus
+Grade of adonus is 98.0
+mean is: 82.48571428571428
+variance is: 75.5869387755102
+Standard Deviation is:  8.694074923504525
